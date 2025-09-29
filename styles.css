@@ -58,7 +58,7 @@ a {
     font-weight: 500;
     color: black;
     font-size: 32px;
-    font-family: "Space Mono", monospace;
+    font-family: "Helvetica", sans-serif;
 }
 
 /* Index page - Hero section */
@@ -98,7 +98,7 @@ a {
     position: absolute;
     padding: 12px 24px;
     text-decoration: none;
-    font-family: "Space Mono", monospace;
+    font-family: "Helvetica", sans-serif;
     font-size: 24px;
 }
 
@@ -146,7 +146,7 @@ a {
     }
 
     h3, h2 {
-      font-family: "Space Mono", monospace;
+      font-family: "Helvetica", sans-serif;
       font-weight: 700;
       font-size: 28px;
       margin-bottom: 4px;
