@@ -35,6 +35,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 1000;
+    background-color: white;
 }
 
 .nav-container {
@@ -80,20 +81,6 @@ a {
     text-align: center;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: black;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
 .positioned-link {
     position: absolute;
     padding: 12px 24px;
@@ -116,16 +103,13 @@ a {
 
 /* Info page */
 .info-page .main-content {
-    margin-top: 70px; /* Adjust for fixed navbar */
-    padding-top: 100px;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     gap: 12px;
-    padding: 50px 20px;
+    padding: 100px 20px 20px 0;
     height: 100vh;
     overflow: scroll;
 
@@ -155,33 +139,30 @@ a {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 200px;
-    }
-    
     .nav-menu {
         gap: 20px;
     }
     
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .page-header h1 {
         font-size: 2rem;
+    }
+    
+    /* Center positioned links on mobile */
+    .positioned-link {
+        position: static;
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -196,13 +177,5 @@ a {
     
     .nav-menu {
         gap: 15px;
-    }
-    
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .info-card {
-        padding: 1.5rem;
     }
 }
